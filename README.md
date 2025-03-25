@@ -40,7 +40,7 @@ This Python script converts a semester schedule from a CSV file into a structure
 Run the script with a CSV file as input:
 
 ```sh
-python format_schedule.py input.csv
+python format_schedule.py Calender.csv Adiminstrative_Activities.csv Teaching_and_Academic_activities.csv
 ```
 
 The script will generate an output text file (`output.txt`) automatically.
