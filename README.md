@@ -18,7 +18,7 @@ This Python script converts a semester schedule from a CSV file into a structure
 
 ## Features
 
-- Parses CSV files containing semester schedules.
+- Parses CSV files containing semester schedules , calender , teaching and academic activities as input .
 - Extracts dates, holidays, and event details.
 - Formats the output in a readable structure.
 - Ignores empty or irrelevant entries.
@@ -47,7 +47,7 @@ The script will generate an output text file (`output.txt`) automatically.
 
 ## CSV Format
 
-The input CSV should contain the following columns:
+The input CSV should contain the following columns in adiminstrative_actvities and teaching_and_academic_activities  :
 
 - **Serial Number**: A unique identifier for each entry.
 - **Status**: Description of scheduled events.
@@ -56,14 +56,12 @@ The input CSV should contain the following columns:
 - **To Date**: End date of the event (if applicable, in `DD/MM/YYYY` format).
 - **To Day**: Day of the week for the end date.
 
-Example:
+Input CSV calendar :
+checks the key word holiday and as per the schedule and update the output.txt
 
-```
-Serial Number,Status,From Date,From Day,To Date,To Day
-1,Orientation,01/01/2025,Wednesday,01/01/2025,Wednesday
-2,Commencement of Classes,02/01/2025,Thursday,02/01/2025,Thursday
-3,Holiday,03/01/2025,Friday,,
-```
+NOTE
+
+the input description should not contain any commas as that will be invalid input 
 
 ## Author
 
